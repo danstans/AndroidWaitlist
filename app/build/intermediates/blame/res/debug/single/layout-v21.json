@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout-v21\\place_autocomplete_fragment.xml"
+        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
     }
 ]

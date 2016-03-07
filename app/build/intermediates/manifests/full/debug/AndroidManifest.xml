@@ -14,10 +14,8 @@
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true" />
- <!-- Permissions required for GCM -->
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
- <!-- Optional permission for App measurement to run. -->
+        android:required="true" /> <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Optional permission for App measurement to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -28,6 +26,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.danielstansberry.waitlist.MainActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,8 +40,7 @@
             android:value="AIzaSyBRChS3887yggJGjOvWMVbTgSJsTVvsL-o" />
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
- <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+            android:value="@integer/google_play_services_version" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"

@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]

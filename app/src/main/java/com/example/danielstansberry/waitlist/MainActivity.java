@@ -27,6 +27,9 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.danielstansberry.waitlist.Responses.ApplyResponse;
+import com.example.danielstansberry.waitlist.Responses.AvailableResponse;
+import com.example.danielstansberry.waitlist.Responses.TableList;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
@@ -43,7 +46,9 @@ import java.util.ArrayList;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.GsonConverterFactory;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.http.GET;
 
@@ -58,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
     String TAG = "TAG";
     ArrayAdapter<String> adapter;
     LocationManager locationManager;
+    AppInfo mAppInfo = AppInfo.getAppInfo();
+
     @Bind(R.id.userName) EditText username;
     @Bind(R.id.numberPicker) NumberPicker numList;
     @Bind(R.id.button) Button SendInfo;
@@ -79,6 +86,24 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
                 .enableAutoManage(this, this)
                 .build();
 
+        username.setEnabled(false);
+
+        // Create logger and set desired log level
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient httpClient = new OkHttpClient.Builder()
+                .addInterceptor(logging)
+                .build();
+
+        // Build retrofit api
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://brave-computer-123802.appspot.com/welcome/api/")    // We are using Luca API to get data
+                .addConverterFactory(GsonConverterFactory.create())	// Add Gson parser
+                .client(httpClient) //Add in logging
+                .build();
+
+        mAppInfo.api = retrofit.create(WaitListApi.class);
+        mAppInfo.context = this;
     }
 
     // TODO: Please implement GoogleApiClient.OnConnectionFailedListener to
@@ -123,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
                 }
             });
             Dialog alertDialog = locationPop.create();
-            alertDialog.setCanceledOnTouchOutside(true);
+            alertDialog.setCanceledOnTouchOutside(false);
             alertDialog.show();
         }
 
@@ -136,6 +161,8 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
             {
                 SharedPreferences.Editor e = ch.edit();
                 if(location.getAccuracy() < 51) {
+                    username.setEnabled(true);
+
                     locationManager.removeUpdates(this);
                     PendingResult<PlaceLikelihoodBuffer> result = Places.PlaceDetectionApi.getCurrentPlace(mGoogleApiClient,null);
                     result.setResultCallback(new ResultCallback<PlaceLikelihoodBuffer>() {
@@ -224,13 +251,25 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
 
     public void chat(View v) //ON CLICK FOR BUTTON
     {
-            SharedPreferences.Editor editor = ch.edit();
-            editor.putString("nickName", username.getText().toString());
-            editor.commit();
+        mAppInfo.nickname = username.getText().toString();
+        // TODO: Use actual device ID
+        mAppInfo.deviceId = "SOME ID TO BE PUT HERE";
+        mAppInfo.partySize = numList.getValue();
+
+
+        SharedPreferences.Editor editor = ch.edit();
+        editor.putString("nickName", mAppInfo.nickname);
+        editor.commit();
+
+        Call<TableList> tableListCall = mAppInfo.api.getWaitList();
+        tableListCall.enqueue(new TableListCallback());
+
     }
 
     public void enableIfReady() {
-        boolean isReady = username.getText().toString().length()>0 && !RestaurantList.getSelectedItem().toString().equals("Select a Restaurant") && numList.getValue()!=0;
+        boolean isReady = username.getText().toString().length()>0
+                && !RestaurantList.getSelectedItem().toString().equals("Select a Rstaurant")
+                && numList.getValue()!=0;
         Retrieve.setVisibility(View.INVISIBLE);
         SendInfo.setClickable(isReady);
         SendInfo.setEnabled(isReady);
