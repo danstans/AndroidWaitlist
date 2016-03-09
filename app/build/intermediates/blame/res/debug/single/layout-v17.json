@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout-v17\\mr_media_route_list_item.xml"
     },
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout-v17\\mr_media_route_list_item.xml"
+        "merged": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout-v17\\mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout-v17\\mr_media_route_list_item.xml"
     }
 ]

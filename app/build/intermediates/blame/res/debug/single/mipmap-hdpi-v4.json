@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

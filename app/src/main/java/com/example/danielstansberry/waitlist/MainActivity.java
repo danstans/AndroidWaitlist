@@ -70,7 +70,10 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
     @Bind(R.id.button) Button SendInfo;
     @Bind(R.id.ret) TextView Retrieve;
     @Bind(R.id.spinner) Spinner RestaurantList;
+    @Bind(R.id.Confirm) Button confirmButton;
 
+    String PROJECT_NUMBER="494797651756";
+    String DEVICE_ID = "";
 
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -104,6 +107,21 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
 
         mAppInfo.api = retrofit.create(WaitListApi.class);
         mAppInfo.context = this;
+
+        GCMClientManager pushClientManager = new GCMClientManager(this, PROJECT_NUMBER);
+        pushClientManager.registerIfNeeded(new GCMClientManager.RegistrationCompletedHandler() {
+            @Override
+            public void onSuccess(String registrationId, boolean isNewRegistration) {
+
+                Log.d("Registration id",registrationId);
+                DEVICE_ID = registrationId;
+                //send this registrationId to your server
+            }
+            @Override
+            public void onFailure(String ex) {
+                super.onFailure(ex);
+            }
+        });
     }
 
     // TODO: Please implement GoogleApiClient.OnConnectionFailedListener to
@@ -126,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
     public void onStart()
     {
         numList.setMinValue(0);
-        numList.setMaxValue(4);
+        numList.setMaxValue(9);
         super.onStart();
         ch = PreferenceManager.getDefaultSharedPreferences(this);
         Retrieve.setVisibility(View.VISIBLE);
@@ -253,7 +271,7 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
     {
         mAppInfo.nickname = username.getText().toString();
         // TODO: Use actual device ID
-        mAppInfo.deviceId = "SOME ID TO BE PUT HERE";
+        mAppInfo.deviceId = DEVICE_ID ;
         mAppInfo.partySize = numList.getValue();
 
 
@@ -268,7 +286,7 @@ public class MainActivity extends AppCompatActivity implements OnConnectionFaile
 
     public void enableIfReady() {
         boolean isReady = username.getText().toString().length()>0
-                && !RestaurantList.getSelectedItem().toString().equals("Select a Rstaurant")
+                && !RestaurantList.getSelectedItem().toString().equals("Select a Restaurant")
                 && numList.getValue()!=0;
         Retrieve.setVisibility(View.INVISIBLE);
         SendInfo.setClickable(isReady);

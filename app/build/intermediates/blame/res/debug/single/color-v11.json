@@ -1,18 +1,26 @@
 [
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Daniel Stansberry\\Documents\\GitHub\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/rion/Dropbox/School/CMPS121/Waitlist-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\rion\\Dropbox\\School\\CMPS121\\Waitlist-App\\C:\\Users\\ethan_000\\AndroidStudioProjects\\Waitlist-App\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     }
 ]
